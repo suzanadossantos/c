@@ -13,7 +13,8 @@ int main(){
 	cout<< "1- Adição ";
 	cout<< "2- Subtração ";
 	cout<< "3- Multiplicação ";
-	cout<< "4- Divisão \n";
+	cout<< "4- Divisão ";
+	cout<< "outros- exit \n\n";
 	cout<< "Número: \n";
 	cin>> num;
 	
@@ -22,19 +23,22 @@ int main(){
 		cin>> num_1;
 		cout<< "Digite o segundo número: \n";
 		cin>> num_2;
-	}  
-	if(num == 1){
-		cout<< "--Resposta-- \n";
-		cout<< num_1 + num_2;
-	} else if(num == 2){
-		cout<< "--Resposta-- \n";
-		cout<< num_1 - num_2;
-	} else if(num == 3){
-		cout<< "--Resposta-- \n";
-		cout<< num_1 * num_2;
-	} else{
-		cout<< "--Resposta-- \n";
-		cout<< num_1 / num_2;
-	}
-	
+		
+		if(num == 1){
+			cout<< "--Resposta-- \n";
+			cout<< num_1 + num_2;
+		} else if(num == 2){
+			cout<< "--Resposta-- \n";
+			cout<< num_1 - num_2;
+		} else if(num == 3){
+			cout<< "--Resposta-- \n";
+			cout<< num_1 * num_2;
+		} else{
+			cout<< "--Resposta-- \n";
+			cout<< num_1 / num_2;
+		}
+		
+	} else {
+		cout<< "Ok!";
+	}	
 }
