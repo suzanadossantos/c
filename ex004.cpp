@@ -5,16 +5,18 @@ using namespace std;
 int main(){
     setlocale(LC_ALL, "ptb"); 
     
-    char resposta[100];
+    char nome_prod[]= "";
+    float preco_prod;
+    
 
     cout<< "---Suas compras---\n";
     cout<< "Digite o nome da compra e depois o valor: \n";
-    cout<< "-Se você não tiver mais produtos digite 0 \n";
-    cin>> resposta;
-
-    if(resposta != "0"){
-        cout<< "Produto: \n";
-    }
+	cout<< "- Produto:  \n";
+	cin>> nome_prod;
+	cout<< "- Pre�o: \n";
+	cin>> preco_prod;
+	cout<< "--Fim das compras-- \n";
+	cout<< "Produtos: " << nome_prod[0] << nome_prod[1] << " = "  << preco_prod;
     
 }
 
